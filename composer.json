@@ -1,5 +1,5 @@
 {
-    "name": "beluga-php/docker-php",
+    "name": "shockedplot7560/docker-php",
     "license": "MIT",
     "type": "library",
     "description": "A Docker PHP client",
@@ -31,11 +31,11 @@
     ],
     "require": {
         "php": ">=8.1",
-        "beluga-php/docker-php-api": "7.1.43.0",
+        "shockedplot7560/docker-php-api": "dev-main",
         "nyholm/psr7": "^1.8",
         "php-http/client-common": "^2.7",
         "php-http/discovery": "^1.19",
-        "plesk/socket-client": "^2.1",
+        "shockedplot7560/socket-client": "2.x-dev",
         "psr/http-message": "^2.0",
         "symfony/filesystem": "^7.0|^6.3",
         "symfony/process": "^7.0|^6.3",
@@ -82,5 +82,12 @@
             "1.42": "1.42.x-dev",
             "1.41": "1.41.x-dev"
         }
-    }
+    },
+    "repositories": [{
+            "type": "vcs",
+            "url": "git@github.com:ShockedPlot7560/docker-php-api.git"
+        },{
+            "type": "vcs",
+            "url": "git@github.com:ShockedPlot7560/socket-client.git"
+    }]
 }
